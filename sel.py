@@ -1,4 +1,4 @@
-KO
+
 from selenium import webdriver
 
    # Укажите путь к ChromeDriver, если он не в PATH

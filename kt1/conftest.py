@@ -19,13 +19,13 @@ def browser(request):
 
     if browser_name == "firefox":
         options = FirefoxOptions()
-        options.add_argument("--headless")  
+        options.add_argument("--headless")  # можно убрать, если хочешь видеть браузер
         service = FirefoxService()
         driver = webdriver.Firefox(service=service, options=options)
 
     elif browser_name == "chrome":
         options = ChromeOptions()
-        options.add_argument("--headless")
+        options.add_argument("--headless")  # можно убрать
         service = ChromeService()
         driver = webdriver.Chrome(service=service, options=options)
 
